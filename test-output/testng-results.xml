@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-28T00:59:39 IST" name="Suite" finished-at="2024-03-28T01:04:13 IST" duration-ms="274254">
+    <groups>
+    </groups>
+    <test started-at="2024-03-28T00:59:39 IST" name="RegressionTest" finished-at="2024-03-28T01:03:11 IST" duration-ms="211502">
+      <class name="test.TC001_SignupTest">
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC001_SignupTest@7e990ed7]" started-at="2024-03-28T01:00:56 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:01:17 IST" duration-ms="20767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="signup()[pri:0, instance:test.TC001_SignupTest@7e990ed7]" started-at="2024-03-28T01:01:17 IST" name="signup" finished-at="2024-03-28T01:01:43 IST" duration-ms="25899" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression id=\"new-password\" because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type."}
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ecf487f49bacd112e8f168356c6e92, findElement {value=id="new-password", using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50428/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5ecf487f49bacd112e8f168356c6e92]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression id=\"new-password\" because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type."}
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ecf487f49bacd112e8f168356c6e92, findElement {value=id="new-password", using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50428/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5ecf487f49bacd112e8f168356c6e92
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at pages.SignupPage.password(SignupPage.java:77)
+at test.TC001_SignupTest.signup(TC001_SignupTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC001_SignupTest@7e990ed7]" started-at="2024-03-28T01:01:44 IST" name="close" finished-at="2024-03-28T01:01:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC001_SignupTest -->
+      <class name="test.TC002_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T00:59:39 IST" name="setup" finished-at="2024-03-28T00:59:39 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T00:59:41 IST" name="launchBrowserandURL" finished-at="2024-03-28T00:59:52 IST" duration-ms="11173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T00:59:52 IST" name="loginTest" data-provider="ReadfromExcel" finished-at="2024-03-28T00:59:54 IST" duration-ms="1736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[divyaganeshwathi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dhan@sekar2605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T00:59:54 IST" name="close" finished-at="2024-03-28T00:59:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T00:59:54 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:00:05 IST" duration-ms="10733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:05 IST" name="loginTest" data-provider="ReadfromExcel" finished-at="2024-03-28T01:00:09 IST" duration-ms="4184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dvyaganeshwathi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dhan@sekar2605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:09 IST" name="close" finished-at="2024-03-28T01:00:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:09 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:00:29 IST" duration-ms="19407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:29 IST" name="loginTest" data-provider="ReadfromExcel" finished-at="2024-03-28T01:00:33 IST" duration-ms="4579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[divyaganeshwathi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dhansekar2605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:34 IST" name="close" finished-at="2024-03-28T01:00:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:34 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:00:50 IST" duration-ms="16671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:50 IST" name="loginTest" data-provider="ReadfromExcel" finished-at="2024-03-28T01:00:56 IST" duration-ms="5570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[divyaneshwathi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dhanasekar2605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC002_LoginTest@14fc5f04]" started-at="2024-03-28T01:00:56 IST" name="close" finished-at="2024-03-28T01:00:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC002_LoginTest -->
+      <class name="test.TC003_OneWayTrip">
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC003_OneWayTrip@c05fddc]" started-at="2024-03-28T01:01:44 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:02:10 IST" duration-ms="26019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="OneWayTrip()[pri:0, instance:test.TC003_OneWayTrip@c05fddc]" started-at="2024-03-28T01:02:10 IST" name="OneWayTrip" finished-at="2024-03-28T01:03:10 IST" duration-ms="60472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OneWayTrip -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC003_OneWayTrip@c05fddc]" started-at="2024-03-28T01:03:11 IST" name="close" finished-at="2024-03-28T01:03:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC003_OneWayTrip -->
+    </test> <!-- RegressionTest -->
+    <test started-at="2024-03-28T01:03:13 IST" name="RegressionTest1" finished-at="2024-03-28T01:04:13 IST" duration-ms="60370">
+      <class name="test.TC005_MenuValidation">
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC005_MenuValidation@3e0e1046]" started-at="2024-03-28T01:03:41 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:04:12 IST" duration-ms="30798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="menuValidation()[pri:0, instance:test.TC005_MenuValidation@3e0e1046]" started-at="2024-03-28T01:04:12 IST" name="menuValidation" finished-at="2024-03-28T01:04:13 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC005_MenuValidation@3e0e1046]" started-at="2024-03-28T01:04:13 IST" name="close" finished-at="2024-03-28T01:04:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC005_MenuValidation -->
+      <class name="test.TC004_TwoWayTrip">
+        <test-method is-config="true" signature="launchBrowserandURL()[pri:0, instance:test.TC004_TwoWayTrip@1b66c0fb]" started-at="2024-03-28T01:03:13 IST" name="launchBrowserandURL" finished-at="2024-03-28T01:03:34 IST" duration-ms="20586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserandURL -->
+        <test-method signature="twoWayTrip()[pri:0, instance:test.TC004_TwoWayTrip@1b66c0fb]" started-at="2024-03-28T01:03:34 IST" name="twoWayTrip" finished-at="2024-03-28T01:03:41 IST" duration-ms="7244" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1g94qm0 r-1w50u8q r-ah5dr5 r-1otgn73" data-focusable="true" tabindex="0" data-testid="home-page-flight-cta" style="background-image: linear-gradient(rgb(252, 182, 62), rgb(247, 148, 29)); margin-left: 12px; padding-right: 20px; padding-left: 20px; width: 162px;">...</div> is not clickable at point (495, 451). Other element would receive the click: <div class="css-1dbjc4n r-1awozwy r-1pi2tsx r-1777fci r-13qz1uu">...</div>
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37a90159e220d49d94709c1d0d8fa1b6, clickElement {id=f.1497951F73761C76F3C731CD589C03A8.d.E8063AC21AC5754E9617AAA0656D0DFB.e.77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50729/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (37a90159e220d49d94709c1d0d8fa1b6)] -> xpath: //div[@data-testid="home-page-flight-cta"]]
+Session ID: 37a90159e220d49d94709c1d0d8fa1b6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1g94qm0 r-1w50u8q r-ah5dr5 r-1otgn73" data-focusable="true" tabindex="0" data-testid="home-page-flight-cta" style="background-image: linear-gradient(rgb(252, 182, 62), rgb(247, 148, 29)); margin-left: 12px; padding-right: 20px; padding-left: 20px; width: 162px;">...</div> is not clickable at point (495, 451). Other element would receive the click: <div class="css-1dbjc4n r-1awozwy r-1pi2tsx r-1777fci r-13qz1uu">...</div>
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37a90159e220d49d94709c1d0d8fa1b6, clickElement {id=f.1497951F73761C76F3C731CD589C03A8.d.E8063AC21AC5754E9617AAA0656D0DFB.e.77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50729/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (37a90159e220d49d94709c1d0d8fa1b6)] -> xpath: //div[@data-testid="home-page-flight-cta"]]
+Session ID: 37a90159e220d49d94709c1d0d8fa1b6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.HomePage.searchButton(HomePage.java:83)
+at test.TC004_TwoWayTrip.twoWayTrip(TC004_TwoWayTrip.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twoWayTrip -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test.TC004_TwoWayTrip@1b66c0fb]" started-at="2024-03-28T01:03:41 IST" name="close" finished-at="2024-03-28T01:03:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test.TC004_TwoWayTrip -->
+    </test> <!-- RegressionTest1 -->
+  </suite> <!-- Suite -->
+</testng-results>
